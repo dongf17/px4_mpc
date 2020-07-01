@@ -29,8 +29,8 @@ find_package(px4_msgs REQUIRED)
 #################
 include_directories(include)
 
-add_executable(mpc_runner src/main.cpp src/mpc_runner.cpp) 
-ament_target_dependencies(mpc_runner rclcpp px4_msgs)
+add_executable(offboard_controller src/main.cpp src/offboard_control.cpp) 
+ament_target_dependencies(offboard_controller rclcpp px4_msgs)
 
 
 
